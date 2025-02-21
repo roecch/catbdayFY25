@@ -5,7 +5,7 @@ import './Shapes.css';
 const ShapesLandingPage = () => {
   return (
     <div className="final-container">
-      <img src="images/shapes.png" alt="shapes" className="centered-image" />
+      <img src="images/Shapes.png" alt="shapes" className="centered-image" />
       <HomeButton />
     </div>
   );
