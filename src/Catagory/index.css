@@ -1,0 +1,60 @@
+.App {
+    text-align: center;
+    padding: 20px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
+}
+
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* .image-stack-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  /* .image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  }
+   */
+  .image {
+    width: 500px; 
+    height: auto;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrow-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+    border-radius: 5px;
+  }
+  
+  .arrow-button:hover {
+    background-color: #0056b3;
+  }
+  .bonny-top-left {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+}
+
+.bonny-bottom-right {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}

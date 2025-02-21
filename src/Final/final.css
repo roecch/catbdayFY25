@@ -1,0 +1,14 @@
+/* src/components/final.css */
+.final-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .centered-image {
+    max-width: 50%; /* Reduce image width to 50% of its container */
+    max-height: 50vh; /* Reduce image height to 50% of the viewport height */
+    margin-bottom: 20px; /* Add some space between the image and the button */
+  }

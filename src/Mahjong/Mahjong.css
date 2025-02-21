@@ -1,0 +1,107 @@
+/* src/App.css */
+.landing-page {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .game-over {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .tiles-container {
+    margin: 20px 0;
+  }
+  
+  .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .mahjong-tile {
+    width: 40px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  
+  .mahjong-tile.playable {
+    background-color: #fff;
+  }
+  
+  .mahjong-tile.playable:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mahjong-tile.inactive {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .mahjong-tile.hidden {
+    background-color: #555; 
+    /* color: #fff; */
+    font-size: 50px; 
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Discard area in the center */
+  .discard-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* src/App.css */
+.tile {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.tile[data-discardedby="player"] {
+  background-color: #aaffaa; /* Light green for player's discarded tiles */
+}
+
+.tile[data-discardedby="robot"] {
+  background-color: #ffaaaa; /* Light red for robot's discarded tiles */
+}
+
+.tile-counter {
+  /* margin: 5px 0; */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
