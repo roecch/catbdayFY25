@@ -9,11 +9,11 @@ import React from "react";
 import HomeButton from "../Home/HomeButton";
 
 const images = [
-    '/images/hummingbird.png',
-    '/images/butterfly.png',
-    '/images/cats.png',
-    '/images/horses.png',
-    '/images/whale.png',
+    'images/hummingbird.png',
+    'images/butterfly.png',
+    'images/cats.png',
+    'images/horses.png',
+    'images/whale.png',
 ];
 
 const CatagoryLandingPage: React.FC = () => {
@@ -32,13 +32,13 @@ const CatagoryLandingPage: React.FC = () => {
     return (
         <div className="category-page-container"> {/* Added a container for positioning */}
             <img
-                src="/images/bonnyclosed.png"
+                src="images/bonnyclosed.png"
                 height={50}
                 className="bonny-top-left" 
                 alt="Bonny Top Left" // Added alt text for accessibility
             />
             <img
-                src="/images/bonnyclosed.png"
+                src="images/bonnyclosed.png"
                 height={50}
                 className="bonny-bottom-right" 
                 style={{ transform: 'scaleX(-1)' }} 

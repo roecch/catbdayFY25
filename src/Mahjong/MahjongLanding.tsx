@@ -200,7 +200,7 @@ const LandingPage: React.FC = () => {
           {robotHands.map((hand, robotIndex) => (
             <div key={robotIndex}>
               <img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Mahjong"
                   style={{ position: 'relative', top: '5px' }} />

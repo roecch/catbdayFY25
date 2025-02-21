@@ -7,8 +7,8 @@ const BonnyModal = () => {
     const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState('');
     
-    const [currentImage, setCurrentImage] = useState("/images/bonnyclosed.png");
-    let audioFileRef  = useRef(new Audio("/images/speaking-animal-crossing-sound-effect-made-with-Voicemod.mp3"));
+    const [currentImage, setCurrentImage] = useState("images/bonnyclosed.png");
+    let audioFileRef  = useRef(new Audio("images/speaking-animal-crossing-sound-effect-made-with-Voicemod.mp3"));
 
   // Sentences to display
   const sentences = [
@@ -76,7 +76,7 @@ const BonnyModal = () => {
 
     const switchImage = () => {
       setCurrentImage((prevImage) =>
-        prevImage === '/images/bonnyclosed.png' ? '/images/bonnyopen.png' : '/images/bonnyclosed.png'
+        prevImage === 'images/bonnyclosed.png' ? 'images/bonnyopen.png' : 'images/bonnyclosed.png'
       );
 
       // Set a new random delay for the next switch

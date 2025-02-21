@@ -4,34 +4,34 @@ import HomeButton from '../Home/HomeButton';
 
 const imageStacks = [
   [
-    '/images/red-velvet-cake.jpg',
-    '/images/coachella.jpg',
-    '/images/milkshake.jpg',
+    'images/red-velvet-cake.jpg',
+    'images/coachella.jpg',
+    'images/milkshake.jpg',
   ],
   [
-    '/images/green-calender.jpg',
-    '/images/trump.jpg',
-    '/images/boulevard-of-broken-dreams.jpg',
+    'images/green-calender.jpg',
+    'images/trump.jpg',
+    'images/boulevard-of-broken-dreams.jpg',
   ],
   [
-    '/images/behind-the-scenes.jpeg',
-    '/images/bee.jpeg',
-    '/images/bluegraybird.jpeg',
+    'images/behind-the-scenes.jpeg',
+    'images/bee.jpeg',
+    'images/bluegraybird.jpeg',
   ],
   [
-    '/images/mamamoo.jpeg',
-    '/images/purple.png',
-    '/images/yes-i-am.jpeg',
+    'images/mamamoo.jpeg',
+    'images/purple.png',
+    'images/yes-i-am.jpeg',
   ],
   [
-    '/images/orange-caramel.jpeg',
-    '/images/lipstick.jpeg',
-    '/images/lipstick.jpeg',
+    'images/orange-caramel.jpeg',
+    'images/lipstick.jpeg',
+    'images/lipstick.jpeg',
   ],
   [
-    '/images/cold-kids-playing.jpg',
-    '/images/parachutes.jpeg',
-    '/images/yellow.png',
+    'images/cold-kids-playing.jpg',
+    'images/parachutes.jpeg',
+    'images/yellow.png',
   ],
   [], // Empty stack for the text content
 ];
@@ -69,7 +69,7 @@ const MusicLandingPage: React.FC = () => {
           ) : (
             <>
               <div id="red"><img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Music 1"
                   style={{ position: 'relative', top: '5px' }} // Added alt text for accessibility
@@ -77,14 +77,14 @@ const MusicLandingPage: React.FC = () => {
             [al.] loses its ends - suffix - Kim Jiwoo from loona
               </div>
               <div id="orange"><img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Music 2"
                   style={{ position: 'relative', top: '5px' }} // Added alt text for accessibility
               />Just started baking a [ar.]</div>
               <div id="blue">
               <img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Music 3"
                   style={{ position: 'relative', top: '5px' }} // Added alt text for accessibility
@@ -92,20 +92,20 @@ const MusicLandingPage: React.FC = () => {
                 [al.] - ([al.], we hear)</div>
               <div id="purple">
               <img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Music 4"
                   style={{ position: 'relative', top: '5px' }}// Added alt text for accessibility
               />[so.] : The letter it last only one long to telegraph.
               </div>
               <div id="green"><img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Music 5"
                   style={{ position: 'relative', top: '5px' }} // Added alt text for accessibility
               />The [al.] is the last one standing.</div>
               <div id="yellow"><img
-                  src="/images/bonnyclosed.png"
+                  src="images/bonnyclosed.png"
                   height={30}
                   alt="Bonny Music 6"
                   style={{ position: 'relative', top: '5px' }} // Added alt text for accessibility

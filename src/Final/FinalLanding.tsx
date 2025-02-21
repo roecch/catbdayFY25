@@ -5,7 +5,7 @@ import './final.css';
 const FinalLandingPage = () => {
   return (
     <div className="final-container">
-      <img src="/images/final.png" alt="Final" className="centered-image" />
+      <img src="images/final.png" alt="Final" className="centered-image" />
       <HomeButton />
     </div>
   );
