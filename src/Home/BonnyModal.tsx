@@ -70,36 +70,36 @@ const BonnyModal = () => {
   }, [isModalOpen, currentSentenceIndex]);
 
 
-  // // Effect to handle the speaking animation
-  // useEffect(() => {
-  //   let timeout : any;
+  // Effect to handle the speaking animation
+  useEffect(() => {
+    let timeout : any;
 
-  //   const switchImage = () => {
-  //     setCurrentImage((prevImage) =>
-  //       prevImage === 'images/bonnyclosed.png' ? 'images/bonnyopen.png' : 'images/bonnyclosed.png'
-  //     );
+    const switchImage = () => {
+      setCurrentImage((prevImage) =>
+        prevImage === 'images/bonnyclosed.png' ? 'images/bonnyopen.png' : 'images/bonnyclosed.png'
+      );
 
-  //     // Set a new random delay for the next switch
-  //     const randomDelay = Math.floor(Math.random() * 200) + 100; // Random delay between 100ms and 500ms
-  //     timeout = setTimeout(switchImage, randomDelay);
-  //   };
+      // Set a new random delay for the next switch
+      const randomDelay = Math.floor(Math.random() * 200) + 100; // Random delay between 100ms and 500ms
+      timeout = setTimeout(switchImage, randomDelay);
+    };
 
-  //   if (isSpeaking) {
-  //       // Start the first switch with a random delay
-  //       const initialDelay = Math.floor(Math.random() * 200) + 100;
-  //       timeout = setTimeout(switchImage, initialDelay);
-  //     } else {
-  //       setCurrentImage('bonnyclosed.png'); // Reset to closed image when not speaking
-  //     }
+    if (isSpeaking) {
+        // Start the first switch with a random delay
+        const initialDelay = Math.floor(Math.random() * 200) + 100;
+        timeout = setTimeout(switchImage, initialDelay);
+      } else {
+        setCurrentImage('bonnyclosed.png'); // Reset to closed image when not speaking
+      }
 
-  //   // Cleanup timeout on unmount or when isSpeaking changes
-  //   return () => clearTimeout(timeout);
-  // }, [isSpeaking]);
+    // Cleanup timeout on unmount or when isSpeaking changes
+    return () => clearTimeout(timeout);
+  }, [isSpeaking]);
 
   //disabled={currentSentenceIndex === sentences.length - 1}
   return (
     <div className="modal">
-          <img src="images/bonnyopen.png" alt="Bonny" />
+          <img src={currentImage} alt="Bonny" />
           <div className="text-container">
             <p>{displayedText}</p>
             <button onClick={nextSentence}>
