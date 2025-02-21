@@ -30,7 +30,7 @@ function Home() {
       };
     const navigateToP4= () => {
       localStorage.setItem('correctPasswords', JSON.stringify(correctPasswords));
-        navigate('/Map'); // d
+        navigate('/Shapes'); // d
       };
     const navigateToP5= () => {
       localStorage.setItem('correctPasswords', JSON.stringify(correctPasswords));
